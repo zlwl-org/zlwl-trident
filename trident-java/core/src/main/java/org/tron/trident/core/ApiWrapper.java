@@ -152,7 +152,6 @@ public class ApiWrapper {
      * This method will only be available before TronGrid prohibits the use without API key
      * 
      * @param hexPrivateKey the binding private key. Operations require private key will all use this unless the private key is specified elsewhere.
-     * @param apiKey this function works with TronGrid, an API key is required.
      * @return a ApiWrapper object
      */
     @Deprecated
@@ -163,7 +162,6 @@ public class ApiWrapper {
     /**
      * The constuctor for Shasta test net. Use TronGrid as default.
      * @param hexPrivateKey the binding private key. Operations require private key will all use this unless the private key is specified elsewhere.
-     * @param apiKey this function works with TronGrid, an API key is required.
      * @return a ApiWrapper object
      */
     public static ApiWrapper ofShasta(String hexPrivateKey) {
@@ -306,7 +304,7 @@ public class ApiWrapper {
 
     /**
      * broadcast a transaction with the binding account.
-     * @param Transaction a signed transaction ready to be broadcasted
+     * @param txn a signed transaction ready to be broadcasted
      * @return a TransactionReturn object contains the broadcasting result
      * @throws RuntimeException if broadcastin fails
      */
@@ -599,7 +597,7 @@ public class ApiWrapper {
     }
 
     /**
-     * Get current API node’ info
+     * Get current API node info
      * @return NodeInfo
      * @throws IllegalException if fail to get nodeInfo
      */

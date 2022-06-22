@@ -25,11 +25,10 @@ import java.util.List;
  * <p>This class provides mutator and accessor methods for all
  * attributes. Besides, functions of smart contracts are wrapped
  * and can be easily viewed through {@link
- * org.tron.trident.core.contract.ContractFunction#toString()}</>
+ * org.tron.trident.core.contract.ContractFunction#toString()}
  *
  * @since jdk 1.8.0_231
  * @see org.tron.trident.core.contract.ContractFunction
- * @see org.tron.trident.proto.Common.SmartContract;
  */
 
 public class Contract {
